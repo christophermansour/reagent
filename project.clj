@@ -8,9 +8,9 @@
                  ;; If :npm-deps enabled, these are used only for externs.
                  ;; Without direct react dependency, other packages,
                  ;; like react-leaflet might have closer dependency to a other version.
-                 [cljsjs/react "15.6.1-1"]
-                 [cljsjs/react-dom "15.6.1-1"]
-                 [cljsjs/react-dom-server "15.6.1-1"]
+                 [cljsjs/react "16.0.0-beta.2-0"]
+                 [cljsjs/react-dom "16.0.0-beta.2-0"]
+                 [cljsjs/react-dom-server "16.0.0-beta.2-0"]
                  [cljsjs/create-react-class "15.6.0-2"]]
 
   :plugins [[lein-cljsbuild "1.1.6"]
@@ -102,8 +102,8 @@
                                    :language-out :ecmascript3
                                    ;; Add process.env.NODE_ENV preload
                                    :shim-process true
-                                   :npm-deps {:react "15.6.1"
-                                              :react-dom "15.6.1"
+                                   :npm-deps {:react "16.0.0-beta.2"
+                                              :react-dom "16.0.0-beta.2"
                                               :create-react-class "15.6.0"}}}}}
 
   :figwheel {:http-server-root "public" ;; assumes "resources"
